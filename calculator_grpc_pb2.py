@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='main',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x15\x63\x61lculator-grpc.proto\x12\x04main\"\x12\n\x03num\x12\x0b\n\x03num\x18\x01 \x01(\x03\")\n\x07twoNums\x12\x0e\n\x06numOne\x18\x01 \x01(\x03\x12\x0e\n\x06numTwo\x18\x02 \x01(\x03\x32\x89\x01\n\x03\x61pi\x12\x1f\n\x03\x61\x64\x64\x12\r.main.twoNums\x1a\t.main.num\x12\x1f\n\x03sub\x12\r.main.twoNums\x1a\t.main.num\x12\x1f\n\x03mul\x12\r.main.twoNums\x1a\t.main.num\x12\x1f\n\x03\x64iv\x12\r.main.twoNums\x1a\t.main.numb\x06proto3')
+  serialized_pb=_b('\n\x15\x63\x61lculator-grpc.proto\x12\x04main\"\x12\n\x03num\x12\x0b\n\x03num\x18\x01 \x01(\x02\")\n\x07twoNums\x12\x0e\n\x06numOne\x18\x01 \x01(\x02\x12\x0e\n\x06numTwo\x18\x02 \x01(\x02\x32\x89\x01\n\x03\x61pi\x12\x1f\n\x03\x61\x64\x64\x12\r.main.twoNums\x1a\t.main.num\x12\x1f\n\x03sub\x12\r.main.twoNums\x1a\t.main.num\x12\x1f\n\x03mul\x12\r.main.twoNums\x1a\t.main.num\x12\x1f\n\x03\x64iv\x12\r.main.twoNums\x1a\t.main.numb\x06proto3')
 )
 
 
@@ -35,8 +35,8 @@ _NUM = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='num', full_name='main.num.num', index=0,
-      number=1, type=3, cpp_type=2, label=1,
-      has_default_value=False, default_value=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
@@ -66,15 +66,15 @@ _TWONUMS = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='numOne', full_name='main.twoNums.numOne', index=0,
-      number=1, type=3, cpp_type=2, label=1,
-      has_default_value=False, default_value=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='numTwo', full_name='main.twoNums.numTwo', index=1,
-      number=2, type=3, cpp_type=2, label=1,
-      has_default_value=False, default_value=0,
+      number=2, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
