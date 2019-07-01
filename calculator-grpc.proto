@@ -1,0 +1,22 @@
+syntax= "proto3";
+
+
+package main;
+
+message num {
+    int64 num = 1;
+}
+
+message twoNums{
+    int64 numOne = 1;
+    int64 numTwo = 2;
+}
+
+service api {
+    rpc add (twoNums) returns (num);
+    rpc sub (twoNums) returns (num);
+    rpc mul (twoNums) returns (num);
+    rpc div (twoNums) returns (num);
+}
+
+
