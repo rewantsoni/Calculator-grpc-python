@@ -20,7 +20,6 @@ class CalculatorServicer(calculator_grpc_pb2_grpc.apiServicer):
         return calculator_grpc_pb2.num(num=(request.numOne+request .numTwo))
 
     def sub(self, request, context):
-        print('here')
         return calculator_grpc_pb2.num(num=(request.numOne-request .numTwo))
 
     def mul(self, request, context):

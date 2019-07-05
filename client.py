@@ -11,7 +11,6 @@ def run(client, n):
         x = int(input('Enter First num:'))
         y = int(input('Enter Second num:'))
         # raise pybreaker.CircuitBreakerError
-        print('here')
         res = client.add(calculator_grpc_pb2.twoNums(numOne=x, numTwo=y))
         print(res.num)
     elif n == '2':
@@ -52,9 +51,8 @@ def connect():
         n = input('Enter your choice: ')
         try:
             running = run(client, n)
-            print(running)
+            # print(running)
         except pybreaker.CircuitBreakerError:
-            print('here')
             print(pybreaker.CircuitBreakerError)
 
 
